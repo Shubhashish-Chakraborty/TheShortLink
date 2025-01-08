@@ -1,7 +1,8 @@
+
 export default function App() {
     return (
-        <div className="bg-red-300">
-            Hello the Website is under Contruction!
+        <div className="h-screen text-custom-4 bg-custom-1">
+            Website under construction
         </div>
     )
 }
