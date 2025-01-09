@@ -6,10 +6,10 @@ export const Navbar = () => {
     // const navigate = useNavigate();
 
     return (
-        <div className="bg-custom-2 sticky top-0 z-50 backdrop-blur-lg flex flex-col md:flex-row justify-between items-center px-4 py-4 md:px-16 md:py-8">
+        <div className="bg-custom-5 sticky top-0 gap-5 z-50 backdrop-blur-lg flex flex-col md:flex-row justify-center items-center px-4 py-4 md:px-16 md:py-8">
             {/* Logo Section */}
             <div
-                className="cursor-pointer hover:-translate-y-2 transition-all duration-500"
+                className="cursor-pointer hover:scale-110 transition-all duration-500"
                 onClick={() => {
                     // navigate('/')
                 }}
@@ -22,26 +22,8 @@ export const Navbar = () => {
             </div>
 
             {/* Github Button */}
-            <div className="flex items-center gap-3 mt-4 md:mt-0">
-                <div
-                    onClick={() =>
-                        window.open(
-                            "https://github.com/Shubhashish-Chakraborty/TheShortLink"
-                        )
-                    }
-                >
-                    <Button variant="primary" text="Frontend" endIcon={<Github />} />
-                </div>
-                
-                <div
-                    onClick={() =>
-                        window.open(
-                            "https://github.com/Shubhashish-Chakraborty/theshortlink-api"
-                        )
-                    }
-                >
-                    <Button variant="other" text="Backend" endIcon={<Github />} />
-                </div>
+            <div>
+                <Button text="OpenSource" onClick={() => {window.open("https://github.com/Shubhashish-Chakraborty/TheShortLink")}} variant="secondary" startIcon={<Github/>}/>
             </div>
         </div>
     );

@@ -2,16 +2,16 @@ import { ReactElement } from "react";
 
 const variantStyle = {
     primary : "bg-blue-600 text-white font-bold hover:bg-blue-900",
-    secondary: "bg-custom-3 border-2 border-white text-white font-bold",
+    secondary: "bg-custom-7 border-2 border-white text-white font-bold",
     other: "bg-red-700 border border-black text-white font-bold"
 }
 
 
-const defaultStyles = "flex items-center px-1 py-1 rounded-md transition-all duration-500 hover:-translate-y-1";
+const defaultStyles = "flex items-center px-2 py-2 rounded-md transition-all duration-500 hover:-translate-y-2";
 
 export const Button = ({variant , text , startIcon , endIcon , onClick}: {
     variant: "primary" | "secondary" | "other";
-    text: string;
+    text?: string;
     startIcon?: ReactElement;
     endIcon?: ReactElement;
     onClick?: () => void;
@@ -27,7 +27,7 @@ export const Button = ({variant , text , startIcon , endIcon , onClick}: {
                 </div> }
                 {text} 
                 
-                {endIcon && <div className="ml-1">
+                {endIcon && <div className="ml-2">
                     {endIcon}
                 </div>}
             </button>
