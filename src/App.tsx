@@ -9,7 +9,7 @@ export default function App() {
             
 
             <div className="md:text-4xl text-xl cursor-progress hover:underline animate-bounce mt-28 transition-all duration-500 flex justify-center items-center">
-                Website under Construction!!
+                Launching Soon!!
             </div>
             <div className="flex justify-center gap-5 mt-10">
                 <div className="flex md:flex-row flex-col justify-center gap-5">
